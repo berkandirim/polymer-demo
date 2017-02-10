@@ -1,0 +1,18 @@
+{
+  "name": "polymer-demo",
+  "version": "0.0.1",
+  "description": "polymer playground.",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "hack": "^0.7.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "berkandirim@gmail.com",
+  "license": "MIT"
+}

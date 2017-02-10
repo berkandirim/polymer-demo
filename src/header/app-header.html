@@ -1,0 +1,26 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="subcomps/_menu.html">
+
+<dom-module id="app-header">
+    <template>
+        <style type="text/css">
+            :host {
+                display: block;
+                padding: 30px 20px;
+                background: #222;
+                color: #ddd;
+            }
+            h1 {  
+                margin-bottom: 20px;
+            }
+        </style>
+        
+        <h1 class="logo">Logo</h1>
+        <main-menu></main-menu>
+    </template>
+    <script>
+        Polymer({
+            is: 'app-header'
+        });
+    </script>
+</dom-module>
