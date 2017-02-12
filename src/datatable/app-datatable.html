@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="../../bower_components/datatables/media/css/jquery.dataTables.css">
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="app-datatable">
+    <template>
+        <style type="text/css">
+            @import "../../bower_components/datatables/media/css/jquery.dataTables.css";
+            :host {
+                display: block;
+                padding: 20px;
+            }
+            :host:after {
+            }
+        </style>
+        <table class="data-table" width="100%">
+            <thead>
+            
+            </thead>
+            <tbody>
+            
+            </tbody>
+        </table>
+    </template>
+    
+    <script>
+        Polymer({
+            is: 'app-datatable',
+            properties: {
+                source: String,
+                columns: Array 
+            },
+            ready: function() {
+                $('.data-table').dataTable({
+                    ajax: this.source,
+                    columns: this.columns
+                })
+            }
+        });
+    </script>
+</dom-module>

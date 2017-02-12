@@ -11,13 +11,19 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="/bower_components/ress/dist/ress.min.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="/src/header/app-header.html">
     <link rel="import" href="/src/content/app-content.html">
+    <link rel="import" href="/src/datatable/app-datatable.html">
 </head>
 <body>
 
 <app-header></app-header>
 <app-content></app-content>
+
+<app-datatable source="data/users.json" columns='[{ "title": "Name" }, { "title": "Position" }, { "title": "Office" }, { "title": "Extn." }, { "title": "Start Day" }, { "title": "Salary" }]'></app-datatable>
+
 </body>
 </html>
